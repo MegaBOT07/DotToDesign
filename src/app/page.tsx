@@ -12,11 +12,24 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen overflow-hidden">
-      {/* Mobile background as base */}
-      <div className="absolute inset-0">
+    
+      {/* Desktop Background */}
+      <div className="hidden md:block absolute inset-0">
         <Image
-          src="/iPhone 14 & 15 Pro - 1.png"
-          alt="Background"
+          src="/Frame 20(desktop).png"
+          alt="Background Desktop"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+        />
+      </div>
+
+      {/* Mobile Background */}
+      <div className="md:hidden absolute inset-0">
+        <Image
+          src="/mobileimg.png"
+          alt="Background Mobile"
           fill
           className="object-cover"
           priority
@@ -40,7 +53,7 @@ export default function Home() {
 
       {/* Coming Soon text at bottom */}
       <div 
-        className={`absolute bottom-24 left-0 right-0 text-center transition-all duration-1000 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        className={`absolute bottom-5 left-0 right-0 text-center transition-all duration-1000 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
         <h1 className="text-white text-xl md:text-2xl font-light tracking-[0.3em] uppercase">
           Coming Soon!
