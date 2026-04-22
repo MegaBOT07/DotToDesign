@@ -14,9 +14,10 @@ export default function Home() {
     <main className="relative min-h-screen overflow-hidden">
     
       {/* Desktop Background */}
-      <div className="hidden md:block absolute inset-0">
+      <div className="hidden md:block absolute  inset-0">
         <Image
-          src="/Frame 20(desktop).png"
+          
+          src="/Frame 23.png"
           alt="Background Desktop"
           fill
           className="object-cover"
@@ -28,7 +29,7 @@ export default function Home() {
       {/* Mobile Background */}
       <div className="md:hidden absolute inset-0">
         <Image
-          src="/mobileimg.png"
+          src="/mobile.png"
           alt="Background Mobile"
           fill
           className="object-cover"
@@ -46,7 +47,7 @@ export default function Home() {
           alt="Logo"
           width={592}
           height={385}
-          className="w-[70%] max-w-[350px] h-auto"
+          className="w-[50%] max-w-[200px] h-auto"
           priority
         />
       </div>
@@ -55,8 +56,8 @@ export default function Home() {
       <div 
         className={`absolute bottom-5 left-0 right-0 text-center transition-all duration-1000 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
-        <h1 className="text-white text-xl md:text-2xl font-light tracking-[0.3em] uppercase">
-          Coming Soon!
+        <h1 className="text-white text-[18px] md:text-[18px] font-light  uppercase">
+          Website by DotToDesign<br/>©2026. All Rights Reserved.
         </h1>
       </div>
     </main>
