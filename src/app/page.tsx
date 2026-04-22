@@ -56,7 +56,7 @@ export default function Home() {
       <div 
         className={`absolute bottom-5 left-0 right-0 text-center transition-all duration-1000 delay-500 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
-        <h1 className="text-white text-[18px] md:text-[18px] font-light  uppercase">
+        <h1 className="text-white text-[18px] md:text-[18px] font-light  ">
           Website by DotToDesign<br/>©2026. All Rights Reserved.
         </h1>
       </div>
